@@ -20,7 +20,9 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^1.1.2",
-    "protractor": "^5.4.1"
+    "protractor": "^5.4.1",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
   },
   "scripts": {
     "postinstall": "npm run copy-libs",
