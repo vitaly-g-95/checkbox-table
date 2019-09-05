@@ -1,0 +1,12 @@
+<label class="custom-control custom-checkbox">
+  <input
+    type="checkbox"
+    class="custom-control-input"
+    ng-model="$ctrl.value"
+    ng-disabled="$ctrl.disabled"
+  />
+
+  <span class="custom-control-label">
+    {{($root.isMobile && $ctrl.labelMobile ? $ctrl.labelMobile : $ctrl.label) | capitalize}}
+  </span>
+</label>

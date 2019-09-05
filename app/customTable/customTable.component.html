@@ -1,0 +1,35 @@
+<table ng-if="$root.isMobile" class="table">
+  <tr>
+    <th>
+      <dynamic-element data="$ctrl.headers[0]"></dynamic-element>
+    </th>
+    <th>
+      <div ng-repeat="(i, col) in $ctrl.headers">
+        <dynamic-element ng-if="i" data="col"></dynamic-element>
+      </div>
+    </th>
+  </tr>
+  <tr ng-repeat="row in $ctrl.data">
+    <td>
+      <dynamic-element data="row[0]"></dynamic-element>
+    </td>
+    <td>
+      <div ng-repeat="(i, col) in row">
+        <dynamic-element ng-if="i" data="col"></dynamic-element>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<table ng-if="!$root.isMobile" class="table">
+  <tr>
+    <th ng-repeat="col in $ctrl.headers">
+      <dynamic-element data="col"></dynamic-element>
+    </th>
+  </tr>
+  <tr ng-repeat="row in $ctrl.data">
+    <td ng-repeat="col in row">
+      <dynamic-element data="col"></dynamic-element>
+    </td>
+  </tr>
+</table>

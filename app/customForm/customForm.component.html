@@ -1,0 +1,13 @@
+<form ng-submit="_onSubmit()">
+  <ng-transclude></ng-transclude>
+
+  <div class="d-flex align-items-center justify-content-end mt-4">
+    <div ng-if="showMessage" class="text-success font-weight-bold mr-4">
+      Saved!
+    </div>
+
+    <button type="submit" class="btn btn-success px-4">
+      Save
+    </button>
+  </div>
+</form>
