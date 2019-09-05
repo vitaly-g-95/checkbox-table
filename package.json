@@ -25,6 +25,8 @@
     "webpack-cli": "^3.3.7"
   },
   "scripts": {
+    "build": "webpack -p",
+    "watch": "webpack --watch",
     "postinstall": "npm run copy-libs",
     "update-deps": "npm update",
     "postupdate-deps": "npm run copy-libs",
